@@ -1,0 +1,27 @@
+#LWP-Cookies-2.0
+Set-Cookie3: WMF-Last-Access="14-Sep-2023"; path="/"; domain="ary.wikipedia.org"; path_spec; secure; expires="2023-10-16 12:00:00Z"; HttpOnly=None; version=0
+Set-Cookie3: NetworkProbeLimit="0.001"; path="/"; domain="ary.wikipedia.org"; path_spec; secure; expires="2023-09-14 21:03:25Z"; version=0
+Set-Cookie3: ss0-arywikiSession=dufs58s0jq5jvpmplpmambdm8p3eap5u; path="/"; domain="ary.wikipedia.org"; path_spec; secure; discard; HttpOnly=None; version=0
+Set-Cookie3: arywikiSession=dufs58s0jq5jvpmplpmambdm8p3eap5u; path="/"; domain="ary.wikipedia.org"; path_spec; secure; discard; HttpOnly=None; SameSite=None; version=0
+Set-Cookie3: arywikiss0-UserID=10037; path="/"; domain="ary.wikipedia.org"; path_spec; secure; expires="2024-09-13 20:03:25Z"; HttpOnly=None; version=0
+Set-Cookie3: arywikiUserID=10037; path="/"; domain="ary.wikipedia.org"; path_spec; secure; expires="2024-09-13 20:03:25Z"; HttpOnly=None; SameSite=None; version=0
+Set-Cookie3: arywikiss0-UserName=Sa7bot; path="/"; domain="ary.wikipedia.org"; path_spec; secure; expires="2024-09-13 20:03:25Z"; HttpOnly=None; version=0
+Set-Cookie3: arywikiUserName=Sa7bot; path="/"; domain="ary.wikipedia.org"; path_spec; secure; expires="2024-09-13 20:03:25Z"; HttpOnly=None; SameSite=None; version=0
+Set-Cookie3: loginnotify_prevlogins="2023-16bhg4d-k5iurvy2bpkufn4ur9spfnq6oy0pb11"; path="/"; domain="ary.wikipedia.org"; path_spec; secure; expires="2024-03-12 20:03:25Z"; HttpOnly=None; version=0
+Set-Cookie3: cpPosIndex="1%401694721805%2306ac09faa76d2683ddb3ceb13eb90dd3"; path="/"; domain="ary.wikipedia.org"; path_spec; secure; expires="2023-09-14 20:03:35Z"; HttpOnly=None; version=0
+Set-Cookie3: UseDC=master; path="/"; domain="ary.wikipedia.org"; path_spec; secure; expires="2023-09-14 20:03:35Z"; HttpOnly=None; version=0
+Set-Cookie3: WMF-Last-Access-Global="14-Sep-2023"; path="/"; domain=".wikipedia.org"; path_spec; domain_dot; secure; expires="2023-10-16 12:00:00Z"; HttpOnly=None; version=0
+Set-Cookie3: GeoIP="MA:09:Agadir:30.42:-9.59:v4"; path="/"; domain=".wikipedia.org"; path_spec; domain_dot; secure; discard; version=0
+Set-Cookie3: centralauth_ss0-User=Sa7bot; path="/"; domain=".wikipedia.org"; path_spec; domain_dot; secure; expires="2024-09-13 20:03:25Z"; HttpOnly=None; version=0
+Set-Cookie3: centralauth_User=Sa7bot; path="/"; domain=".wikipedia.org"; path_spec; domain_dot; secure; expires="2024-09-13 20:03:25Z"; HttpOnly=None; SameSite=None; version=0
+Set-Cookie3: centralauth_ss0-Token=c96adb38dd69d3fec4d59e984628fcdd; path="/"; domain=".wikipedia.org"; path_spec; domain_dot; secure; expires="2024-09-13 20:03:25Z"; HttpOnly=None; version=0
+Set-Cookie3: centralauth_Token=c96adb38dd69d3fec4d59e984628fcdd; path="/"; domain=".wikipedia.org"; path_spec; domain_dot; secure; expires="2024-09-13 20:03:25Z"; HttpOnly=None; SameSite=None; version=0
+Set-Cookie3: ss0-centralauth_Session=a3017fd0a515879f7c338f24e84dba8f; path="/"; domain=".wikipedia.org"; path_spec; domain_dot; secure; discard; HttpOnly=None; version=0
+Set-Cookie3: centralauth_Session=a3017fd0a515879f7c338f24e84dba8f; path="/"; domain=".wikipedia.org"; path_spec; domain_dot; secure; discard; HttpOnly=None; SameSite=None; version=0
+Set-Cookie3: WMF-Last-Access="14-Sep-2023"; path="/"; domain="www.wikidata.org"; path_spec; secure; expires="2023-10-16 12:00:00Z"; HttpOnly=None; version=0
+Set-Cookie3: NetworkProbeLimit="0.001"; path="/"; domain="www.wikidata.org"; path_spec; secure; expires="2023-09-14 21:03:22Z"; version=0
+Set-Cookie3: WMF-Last-Access-Global="14-Sep-2023"; path="/"; domain=".wikidata.org"; path_spec; domain_dot; secure; expires="2023-10-16 12:00:00Z"; HttpOnly=None; version=0
+Set-Cookie3: GeoIP="MA:09:Agadir:30.42:-9.59:v4"; path="/"; domain=".wikidata.org"; path_spec; domain_dot; secure; discard; version=0
+Set-Cookie3: WMF-Last-Access="14-Sep-2023"; path="/"; domain="commons.wikimedia.org"; path_spec; secure; expires="2023-10-16 12:00:00Z"; HttpOnly=None; version=0
+Set-Cookie3: NetworkProbeLimit="0.001"; path="/"; domain="commons.wikimedia.org"; path_spec; secure; expires="2023-09-14 21:03:18Z"; version=0
+Set-Cookie3: GeoIP="MA:09:Agadir:30.42:-9.59:v4"; path="/"; domain=".wikimedia.org"; path_spec; domain_dot; secure; discard; version=0
