@@ -763,7 +763,7 @@ class Article:
             for page in pagegenerators.PreloadingGenerator(pages, 100):
                 self.articleTitle=page.title()
                 print(self.articleTitle, ":")
-                print("nationality:",self.get_demonym_from_wikidata(self.get_country_id(self.articleTitle)))
+                print("nationality :",self.get_demonym_from_wikidata(self.get_country_id(self.articleTitle)))
                 self.search_demonym_into_text(self.get_demonym_from_wikidata(self.get_country_id(self.articleTitle)))
             print("---------------------------------")
 #TESTS
