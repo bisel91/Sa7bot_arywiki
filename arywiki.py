@@ -665,7 +665,7 @@ class Article:
                 else:
                     dateofdeath = art.extract_date_of_death(section2)
                     print("Date of death(WIKIPEDIA) SEC2", dateofdeath)
-                print("Calling GET_DATE_WIKIDATA")
+
                 date_death_fromWikiData = art.get_date_wikidata(art.get_qid(page.title()), "P570")
                 if date_death_fromWikiData!=None:
                     print("Date of death(WIKIDATA):", date_death_fromWikiData)
