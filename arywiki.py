@@ -10,6 +10,7 @@ from pywikibot.exceptions import PageRelatedError
 
 class Article:
     # initializing the variables
+    selected_section=0
     keywordexpressionb=""
     keywordexpressiond = ""
     articleTitle = ""
@@ -306,15 +307,16 @@ class Article:
             print("Exception is date multiple")
     def get_date_wikidata(self,id,property):
         try:
+            # Input validation
             if not id or not property:
                 raise ValueError("Invalid ID or property")
             wikidata_site = pywikibot.Site("wikidata", "wikidata")
             item = pywikibot.ItemPage(wikidata_site, id)
             if not item.exists():
-                return None
+                return None  # Handle the case where the item does not exist
             item.get()
-            date_claim = item.claims.get(property,[])
-
+            date_claim = item.claims.get(property, [])
+            year, month, day = None, None, None
             if date_claim:
                 preferred_statements = [s for s in date_claim if s.rank == 'preferred']
                 normal_statements = [s for s in date_claim if s.rank == 'normal']
@@ -328,20 +330,20 @@ class Article:
                         day = date_of_.day
                         return self.date_of_birth_format(year, month, day)
                     else:
-                        date_of_=normal_statements[0].getTarget()
+                        date_of_ = normal_statements[0].getTarget()
                         year = date_of_.year
                         month = date_of_.month
                         day = date_of_.day
                         return self.date_of_birth_format(year, month, day)
                 else:
-                    date_of_=date_claim[0].getTarget()
+                    date_of_ = date_claim[0].getTarget()
                     year = date_of_.year
                     month = date_of_.month
                     day = date_of_.day
                     return self.date_of_birth_format(year, month, day)
             else:
-              return None
-        except pywikibot.exceptions.NoPage as e:
+                return None
+        except pywikibot.exceptions.NoPageError as e:
               print(f"The item with QID {id} does not exist.")
         except Exception as e:
             print("An error occurred:", e)
@@ -495,7 +497,13 @@ class Article:
                 sections = page_text.split('\n\n')
                 # Check if there is at least one section
                 result = extract_sections(page_text, site)
-                sec1 = sections[0]
+                if oldate in sections[0]:
+                    self.selected_section=0
+                elif oldate in sections[1]:
+                    self.selected_section=1
+                else:
+                    self.selected_section=2
+                sec1 = sections[self.selected_section]
                 description=""
                 if property=="P569":
                     description="تبدال ديال تاريخ دالزيادة"
@@ -509,7 +517,7 @@ class Article:
                             new_article_text = re.sub(alterdate, newdate, sec1)
                             print(oldate, "-Line 349-", newdate)
                             # print(new_article_text)
-                            sections[0] = new_article_text
+                            sections[self.selected_section] = new_article_text
                             updated_page_text = '\n\n'.join(sections)
                             page.text = updated_page_text
                             save_result = page.save(summary=description, minor=False, botflag=True,force=True)
@@ -526,7 +534,7 @@ class Article:
                                 new_article_text = re.sub(pattern, patt, sec1)
                                 #print(pattern)
                                 #print(new_article_text)
-                                sections[0]= new_article_text
+                                sections[self.selected_section]= new_article_text
                                 updated_page_text = '\n\n'.join(sections)
                                 page.text = updated_page_text
                                 save_result = page.save(summary=description, minor=False, botflag=True, force=True)
@@ -535,7 +543,7 @@ class Article:
                                 new_article_text = re.sub(exp1, target1, sec1)
                                 print(exp1, "-Line 341-", exp1)
                                 #print(new_article_text)
-                                sections[0]= new_article_text
+                                sections[self.selected_section]= new_article_text
                                 updated_page_text = '\n\n'.join(sections)
                                 page.text = updated_page_text
                                 save_result = page.save(summary=description, minor=False, botflag=True, force=True)
@@ -544,7 +552,7 @@ class Article:
                                 new_article_text = re.sub(oldate, newdate, sec1)
                                 print(oldate, "-Line 349-",newdate)
                                 #print(new_article_text)
-                                sections[0]= new_article_text
+                                sections[self.selected_section]= new_article_text
                                 updated_page_text = '\n\n'.join(sections)
                                 page.text = updated_page_text
                                 save_result = page.save(summary=description, minor=False, botflag=True, force=True)
@@ -560,7 +568,7 @@ class Article:
                             new_article_text = re.sub(pattern, patt, sec1)
                             print(exp2, "-Line 360-",target2)
                             #print(new_article_text)
-                            sections[0]= new_article_text
+                            sections[self.selected_section]= new_article_text
                             updated_page_text = '\n\n'.join(sections)
                             page.text = updated_page_text
                             save_result = page.save(summary=description, minor=False, botflag=True, force=True)
@@ -569,7 +577,7 @@ class Article:
                             new_article_text=re.sub(exp22,target2,sec1)
                             print(exp22, "-Line 360-", target2)
                             #print(new_article_text)
-                            sections[0]= new_article_text
+                            sections[self.selected_section]= new_article_text
                             updated_page_text = '\n\n'.join(sections)
                             page.text = updated_page_text
                             save_result = page.save(summary=description, minor=False, botflag=True, force=True)
@@ -578,7 +586,7 @@ class Article:
                             new_article_text = re.sub(oldate, newdate, sec1)
                             print(oldate, "-Line 347-", newdate)
                             #print(new_article_text)
-                            sections[0]= new_article_text
+                            sections[self.selected_section]= new_article_text
                             updated_page_text = '\n\n'.join(sections)
                             page.text = updated_page_text
                             save_result = page.save(summary=description, minor=False, botflag=True, force=True)
@@ -590,14 +598,14 @@ class Article:
                             target5 = "نهار " + newdate
                             if alter in sec1:
                                 new_article_text = re.sub(alter, newdate, sec1)
-                                sections[0] = new_article_text
+                                sections[self.selected_section] = new_article_text
                                 updated_page_text = '\n\n'.join(sections)
                                 page.text = updated_page_text
                                 save_result = page.save(summary=description, minor=False, botflag=True,force=True)
                                 print("save result:", save_result)
                             elif target4 in sec1:
                                 new_article_text = re.sub(target4, target5, sec1)
-                                sections[0] = new_article_text
+                                sections[self.selected_section] = new_article_text
                                 updated_page_text = '\n\n'.join(sections)
                                 page.text = updated_page_text
                                 save_result = page.save(summary=description, minor=False, botflag=True,
@@ -608,7 +616,7 @@ class Article:
                                 print(oldate, "-Line 355-",newdate)
                                 #print(new_article_text)
                                 #print(sections[0])
-                                sections[0]= new_article_text
+                                sections[self.selected_section]= new_article_text
                                 updated_page_text = '\n\n'.join(sections)
                                 page.text = updated_page_text
                                 save_result = page.save(summary=description, minor=False, botflag=True, force=True)
@@ -618,7 +626,7 @@ class Article:
                             print(oldate, "-Line 355-", newdate)
                             # print(new_article_text)
                             # print(sections[0])
-                            sections[0] = new_article_text
+                            sections[self.selected_section] = new_article_text
                             updated_page_text = '\n\n'.join(sections)
                             page.text = updated_page_text
                             save_result = page.save(summary=description, minor=False, botflag=True, force=True)
@@ -646,7 +654,7 @@ class Article:
                 content = art.get_main_content()
                 section0 = page.text.split("==")[0]
                 section1 = page.text.split("==")[1]
-                section2=page.text.split("==")[1]
+                section2=page.text.split("==")[2]
                 dateofdeath=None
                 if art.extract_date_of_death(section0) != None:
                     dateofdeath=art.extract_date_of_death(section0)
@@ -656,7 +664,8 @@ class Article:
                     print("Date of death(WIKIPEDIA) SEC1", dateofdeath)
                 else:
                     dateofdeath = art.extract_date_of_death(section2)
-                    print("Date of death(WIKIPEDIA) SEC1", dateofdeath)
+                    print("Date of death(WIKIPEDIA) SEC2", dateofdeath)
+                print("Calling GET_DATE_WIKIDATA")
                 date_death_fromWikiData = art.get_date_wikidata(art.get_qid(page.title()), "P570")
                 if date_death_fromWikiData!=None:
                     print("Date of death(WIKIDATA):", date_death_fromWikiData)
@@ -802,14 +811,9 @@ birthsof=[
     'زيادة 1940',
     'زيادة 1941'
 ]
-people=[
-    "جواو جيلبيرطو",
-    "جاك شيراك",
-    "جوست فونطين"
-]
 art=Article("")
-#art.countryprocessing(birthsof)
-art.countryprocessing(birthsof)
+art.deathInfoProcessing(birthsof)
+
 
 
 
