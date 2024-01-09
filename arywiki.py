@@ -745,6 +745,22 @@ class Article:
                      print("You should add",d)
         else:
             print("ما كاينة حتى جنسية فهاد لارتيكل ولا مكتوبة بالغلط")
+
+    def get_wikidata_label(self, item_id):
+        site = pywikibot.Site("wikidata", "wikidata")  # English Wikidata
+        repo = site.data_repository()
+        try:
+            item = pywikibot.ItemPage(repo, item_id)
+            item.get()  # Fetch the latest data from Wikidata
+            # Get the English label
+            label = item.labels.get("en")
+            return label
+        except pywikibot.exceptions.NoPage:
+            print(f"Item with ID {item_id} not found on Wikidata.")
+            return None
+        except pywikibot.exceptions.Error as e:
+            print(f"Error: {e}")
+            return None
     def updateCountryOfCitizenship(self,oldc,newc):
         site = pywikibot.Site("ary", "wikipedia")
         site.login()
@@ -811,8 +827,7 @@ birthsof=[
     'زيادة 1940',
     'زيادة 1941'
 ]
-art=Article("")
-art.deathInfoProcessing(birthsof)
+
 
 
 
