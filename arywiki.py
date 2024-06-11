@@ -138,22 +138,29 @@ class Article:
                 gender = self.get_gender_of_human_item(self.get_qid(self.articleTitle))
                 # print("gender:", gender)
                 nats = []
+                arnats=[]
                 for item_id in items_id:
                     # print(item_id)
                     item = pywikibot.ItemPage(repo, item_id)
                     item.get()
                     if "P1549" in item.claims:
                         demonym_claim = item.claims["P1549"]
-                        nationalities = []
+                        arynationalities = []
+                        arnationalities = []
                         for dc in demonym_claim:
                             if dc.getTarget().language == 'ary':
                                 nat = dc.getTarget().text
-                                nationalities.append(nat)
+                                arynationalities.append(nat)
+                            if dc.getTarget().language == 'ar':
+                                arnat = dc.getTarget().text
+                                arnationalities.append(arnat)
                         if gender == 'female':
-                            nats.append(nationalities[1])
+                            nats.append(arynationalities[1])
+                            arnats.append(arnationalities[1])
                         else:
-                            nats.append(nationalities[0])
-                return nats
+                            nats.append(arynationalities[0])
+                            arnats.append(arnationalities[0])
+                return nats,arnats
             else:
                 return "No demonym found for item"
         except IndexError as e:
@@ -732,17 +739,24 @@ class Article:
                     except Exception as e:
                         print(e)
             print("-------------------------------------------")
-    def search_demonym_into_text(self,demonyms:[]):
+    def search_demonym_into_text(self,ary:[],ar:[]):
         site = pywikibot.Site("ary", "wikipedia")
         page = pywikibot.Page(site, self.articleTitle)
-        content = page.text
-        if demonyms is not None:
+        sections = page.text.split("== عيون لكلام ==")
+        # Use the first part before "==References==" as the extracted text
+        extracted_text = sections[0].strip()
+        # section1 = extracted_text.split('\n\n')[0]
+        # section2 = extracted_text.split('\n\n')[1]
+        if (ary is not None) and (ar is not None):
             print(self.get_main_content())
-            for d in demonyms:
-                 if (d in self.get_main_content()):
+            print("ARYWIKI Zone")
+            if len(ary)==1 and len(ar)==1:
+                 if (ary[0] in self.get_main_content()):
                      print("GOOD!")
-                 else:
-                     print("You should add",d)
+                 elif (ar[0] in extracted_text):
+
+                     print("You should edit",ar[0]," to :",ary[0])
+                     self.updateCountryOfCitizenship(ar[0],ary[0],0)
         else:
             print("ما كاينة حتى جنسية فهاد لارتيكل ولا مكتوبة بالغلط")
 
@@ -761,20 +775,24 @@ class Article:
         except pywikibot.exceptions.Error as e:
             print(f"Error: {e}")
             return None
-    def updateCountryOfCitizenship(self,oldc,newc):
+    def updateCountryOfCitizenship(self,oldc,newc,s):
         site = pywikibot.Site("ary", "wikipedia")
         site.login()
         page = pywikibot.Page(site, self.articleTitle)
+        #----------------------
+        #----------------------
         page_text = page.text
         sections = page_text.split('\n\n')
         result = extract_sections(page_text, site)
-        sec1 = sections[0]
+        sec1 = sections[0].strip()
         new_article_text = re.sub(oldc, newc, sec1)
         # print(new_article_text)
-        sections[0] = new_article_text
-        updated_page_text = '\n\n'.join(sections)
+        sections[s] = new_article_text
+        updated_page_text ='\n\n'.join(sections)
+        print("==============Updating...")
+        print(updated_page_text)
         page.text = updated_page_text
-        description="تصحيح ولا تبدال ديال بلد الجنسية"
+        description="تصحيح ديال لجينسية ديال "+self.articleTitle
         save_result = page.save(summary=description, minor=False, botflag=True, force=True)
         print("save result:", save_result)
     def countryprocessing(self,categories):
@@ -785,11 +803,12 @@ class Article:
             print("**************",cat,"***********************")
             catg = pywikibot.Category(site, cat)
             pages = catg.articles()
-            for page in pagegenerators.PreloadingGenerator(pages, 100):
+            for page in pagegenerators.PreloadingGenerator(pages, 200):
                 self.articleTitle=page.title()
                 print(self.articleTitle, ":")
-                print("nationality :",self.get_demonym_from_wikidata(self.get_country_id(self.articleTitle)))
-                self.search_demonym_into_text(self.get_demonym_from_wikidata(self.get_country_id(self.articleTitle)))
+                nats,arnats=self.get_demonym_from_wikidata(self.get_country_id(self.articleTitle))
+                print("nationality :",nats)
+                self.search_demonym_into_text(nats,arnats)
             print("---------------------------------")
 #TESTS
 categories1=[

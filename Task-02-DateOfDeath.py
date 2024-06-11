@@ -1,14 +1,27 @@
 from pywikibot import pagegenerators
 from pywikibot.scripts.generate_user_files import pywikibot
 from arywiki import Article
-categories=[
-    'زيادة  1986',
-    'زيادة  1987',
-    'زيادة  1988',
-    'زيادة  1989',
-    'زيادة  1990',
-    'زيادة  1991'
-
+categories2=[
+    'شخصيات دينية مغريبية',
+    'صحافيين ؤ صحافيات مغاربا',
+    'ضباط د لبوليس مغاربا',
+    'طباخ مغريبي',
+    'فنانا ؤ فنانات د لكوميكس مغاربا',
+    'فنانين ؤ فنانات مغاربا',
+    'مهنديسين مغاربا',
+    'ناس قراو ف ليسي ديكارط'
+    'زيادة 1963',
+    'مغني مغريبي'
+]
+birthsof=[
+    'ناس ربحو جايزة نوبل د لأدب',
+    'رايس د لميريكان',
+    'زيادة 1946'
+]
+births4=[
+    'ناس تزادو ف سيدي قاسم',
+    'ناس تزادو ف لمحمدية',
+    'ناس تزادو ف مكناس'
 ]
 def deathInfoProcessing(categories):
     family = 'wikipedia'
@@ -58,4 +71,4 @@ def deathInfoProcessing(categories):
                         oldd =art.formated_date_of_birth(dateofdeath)
                         art.update_date_of_birth(page.title() ,oldd ,newd ,precision_ary ,"P570")
         print("-------------------------------------------")
-deathInfoProcessing(categories)
+deathInfoProcessing(categories2)
