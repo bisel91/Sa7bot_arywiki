@@ -32,5 +32,16 @@ def check_for_new_categories(lang='ary'):
     else:
         print("ماكاين حتى تصنيف جديد.")
 
+def monitor_new_categories(lang='ary', limit=100):
+    site = pywikibot.Site(lang, 'wikipedia')
 
-check_for_new_categories()
+    # changetype='new' باش نجيبو غير لي عاد تنشأو
+    recent_cats = site.recentchanges(namespaces=14, changetype='new', total=limit)
+
+    for rc in recent_cats:
+        print(f"تزاد تصنيف جديد: {rc['title']} من طرف {rc['user']}")
+
+
+monitor_new_categories()
+
+#check_for_new_categories()
