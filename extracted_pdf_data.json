@@ -1,9 +1,21 @@
 [
     {
         "document_title": "Dummy PDF file",
-        "author_or_organization": "Unknown",
-        "summary": "No summary provided",
+        "author_or_organization": "dummy",
+        "summary": "dummy",
         "key_findings": [],
-        "source": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+        "file_name": "dummy.pdf",
+        "local_path": "pdf/dummy.pdf"
+    },
+    {
+        "document_title": "Dummy PDF file",
+        "author_or_organization": "N/A",
+        "summary": "N/A",
+        "key_findings": [
+            "N/A",
+            "N/A"
+        ],
+        "file_name": "dummy.pdf",
+        "local_path": "pdf/dummy.pdf"
     }
 ]
