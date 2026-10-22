@@ -1,0 +1,272 @@
+[
+  {
+    "url": "https://mjcc.gov.ma/ar/",
+    "status": "error",
+    "error": "timed out waiting for llama-server to start -  (status code: 500)"
+  },
+  {
+    "url": "https://www.visitmorocco.com/ar/",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='www.visitmorocco.com', port=443): Max retries exceeded with url: /ar/ (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fabeace0>: Failed to resolve 'www.visitmorocco.com' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://culture.ma/patrimoine-culturel/",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='culture.ma', port=443): Max retries exceeded with url: /patrimoine-culturel/ (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fabea0e0>: Failed to resolve 'culture.ma' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://maroc.ma/ar",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='maroc.ma', port=443): Max retries exceeded with url: /ar (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fabe98d0>: Failed to resolve 'maroc.ma' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://www.marefa.org",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='www.marefa.org', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fabe8c70>: Failed to resolve 'www.marefa.org' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://turath.ma/",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='turath.ma', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fabe9030>: Failed to resolve 'turath.ma' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://archiqoo.com/unesco/unesco_list_countries/unesco_list_morocco_ar.php",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='archiqoo.com', port=443): Max retries exceeded with url: /unesco/unesco_list_countries/unesco_list_morocco_ar.php (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fabe9900>: Failed to resolve 'archiqoo.com' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://folkculturebh.org/ar/index.php?issue=40&page=article&id=762",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='folkculturebh.org', port=443): Max retries exceeded with url: /ar/index.php?issue=40&page=article&id=762 (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fabea2c0>: Failed to resolve 'folkculturebh.org' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://e-services.minculture.gov.ma/",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='e-services.minculture.gov.ma', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fabebdc0>: Failed to resolve 'e-services.minculture.gov.ma' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://fnm.ma/",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='fnm.ma', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fabebb20>: Failed to resolve 'fnm.ma' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://www.visitmorocco.com/",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='www.visitmorocco.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fb98e4a0>: Failed to resolve 'www.visitmorocco.com' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://www.bnrm.ma/",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='www.bnrm.ma', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fabebeb0>: Failed to resolve 'www.bnrm.ma' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://www.moroccohykayat.com/",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='www.moroccohykayat.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fabea620>: Failed to resolve 'www.moroccohykayat.com' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://www.e-taqafa.ma/",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='www.e-taqafa.ma', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fabe9f60>: Failed to resolve 'www.e-taqafa.ma' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://whc.unesco.org/en/statesparties/ma",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='whc.unesco.org', port=443): Max retries exceeded with url: /en/statesparties/ma (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fabe94e0>: Failed to resolve 'whc.unesco.org' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://archnet.org/",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='archnet.org', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fabe8460>: Failed to resolve 'archnet.org' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://insap.ac.ma/",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='insap.ac.ma', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fabe92d0>: Failed to resolve 'insap.ac.ma' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://www.google.com/search?q=https://www.artisunat.gov.ma/",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /search?q=https://www.artisunat.gov.ma/ (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fabe9ff0>: Failed to resolve 'www.google.com' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://www.archivesdumaroc.ma/",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='www.archivesdumaroc.ma', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fabeace0>: Failed to resolve 'www.archivesdumaroc.ma' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://maroc.ma/fr",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='maroc.ma', port=443): Max retries exceeded with url: /fr (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fabe9e40>: Failed to resolve 'maroc.ma' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://www.fmh2.ma/",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='www.fmh2.ma', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fabe8a90>: Failed to resolve 'www.fmh2.ma' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://www.museeyslmarrakech.com/",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='www.museeyslmarrakech.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fabeb550>: Failed to resolve 'www.museeyslmarrakech.com' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://www.google.com/search?q=https://www.wmf.org/project-search%3Fcountry%3DMorocco",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /search?q=https://www.wmf.org/project-search%3Fcountry%3DMorocco (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fabebe50>: Failed to resolve 'www.google.com' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "http://www.casamemoire.org/",
+    "status": "error",
+    "error": "HTTPConnectionPool(host='www.casamemoire.org', port=80): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPConnection object at 0x7f38fabea3b0>: Failed to resolve 'www.casamemoire.org' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://www.mjcc.gov.ma/",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='www.mjcc.gov.ma', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fabe9e70>: Failed to resolve 'www.mjcc.gov.ma' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://e-services.minculture.gov.ma/",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='e-services.minculture.gov.ma', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fabe9630>: Failed to resolve 'e-services.minculture.gov.ma' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://fnm.ma/",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='fnm.ma', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fab73dc0>: Failed to resolve 'fnm.ma' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://www.visitmorocco.com/",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='www.visitmorocco.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fabe9960>: Failed to resolve 'www.visitmorocco.com' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://www.bnrm.ma/",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='www.bnrm.ma', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fabea0b0>: Failed to resolve 'www.bnrm.ma' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://www.moroccohykayat.com/",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='www.moroccohykayat.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fabeb040>: Failed to resolve 'www.moroccohykayat.com' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://www.e-taqafa.ma/",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='www.e-taqafa.ma', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fabeaf20>: Failed to resolve 'www.e-taqafa.ma' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://whc.unesco.org/en/statesparties/ma",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='whc.unesco.org', port=443): Max retries exceeded with url: /en/statesparties/ma (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fabe8a30>: Failed to resolve 'whc.unesco.org' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://archnet.org/",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='archnet.org', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fabe8910>: Failed to resolve 'archnet.org' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://insap.ac.ma/",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='insap.ac.ma', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fabebf70>: Failed to resolve 'insap.ac.ma' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://www.artisunat.gov.ma/",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='www.artisunat.gov.ma', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fabea2f0>: Failed to resolve 'www.artisunat.gov.ma' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://www.archivesdumaroc.ma/",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='www.archivesdumaroc.ma', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fabe9de0>: Failed to resolve 'www.archivesdumaroc.ma' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://www.fmh2.ma/",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='www.fmh2.ma', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fabe9300>: Failed to resolve 'www.fmh2.ma' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://www.medersabenyoussef.ma/",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='www.medersabenyoussef.ma', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fab733a0>: Failed to resolve 'www.medersabenyoussef.ma' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://www.museeyslmarrakech.com/",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='www.museeyslmarrakech.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fabe9b70>: Failed to resolve 'www.museeyslmarrakech.com' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://museedesmusiques.ma/",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='museedesmusiques.ma', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fabeb7f0>: Failed to resolve 'museedesmusiques.ma' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://eap.bl.uk/",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='eap.bl.uk', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fabe86a0>: Failed to resolve 'eap.bl.uk' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://cultherim.site/",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='cultherim.site', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fabe8070>: Failed to resolve 'cultherim.site' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "http://www.ader-fes.ma/",
+    "status": "error",
+    "error": "HTTPConnectionPool(host='www.ader-fes.ma', port=80): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPConnection object at 0x7f38fab73940>: Failed to resolve 'www.ader-fes.ma' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "http://www.casamemoire.org/",
+    "status": "error",
+    "error": "HTTPConnectionPool(host='www.casamemoire.org', port=80): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPConnection object at 0x7f38fabe8190>: Failed to resolve 'www.casamemoire.org' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://eamena.org/",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='eamena.org', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fabebb20>: Failed to resolve 'eamena.org' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://www.manazir.ch/",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='www.manazir.ch', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fabead10>: Failed to resolve 'www.manazir.ch' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://fspcrabat.ma/",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='fspcrabat.ma', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fabea200>: Failed to resolve 'fspcrabat.ma' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://m6art.ma/",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='m6art.ma', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fabe9510>: Failed to resolve 'm6art.ma' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://www.museums.ma/",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='www.museums.ma', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fab72bf0>: Failed to resolve 'www.museums.ma' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://www.ircam.ma/",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='www.ircam.ma', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fabe88e0>: Failed to resolve 'www.ircam.ma' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://www.alquds.ma/",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='www.alquds.ma', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fabebf40>: Failed to resolve 'www.alquds.ma' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://www.inba.ac.ma/",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='www.inba.ac.ma', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fabe8220>: Failed to resolve 'www.inba.ac.ma' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://www.alquaraouiyine.com/",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='www.alquaraouiyine.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fabe8e50>: Failed to resolve 'www.alquaraouiyine.com' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "url": "https://www.babelfan.ma/",
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='www.babelfan.ma', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f38fab73700>: Failed to resolve 'www.babelfan.ma' ([Errno -3] Temporary failure in name resolution)\"))"
+  }
+]
