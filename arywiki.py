@@ -243,8 +243,27 @@ class Article:
             "exintro": True,      # المقدمة فين كيكون تاريخ الازدياد
             "explaintext": True,
         }
-        response = requests.get(base_url, params=params)
-        data = response.json()
+        #response = requests.get(base_url, params=params)
+        #data = response.json()
+        url = "https://ary.wikipedia.org/w/api.php"
+        # 1. إضافة User-Agent لتعريف البوت الخاص بك لتجنب حظر ويكيبيديا
+        headers = {
+            'User-Agent': 'Sa7bot/1.0 (https://ary.wikipedia.org; Bisel91) based on requests'
+        }
+
+        # 2. تمرير الـ headers مع الطلب
+        response = requests.get(url, params=params, headers=headers)
+
+        # 3. التأكد من الاستجابة قبل تحويلها إلى JSON
+        try:
+            if response.status_code == 200:
+                data = response.json()
+            else:
+                print(f"خطأ في الاتصال: السيرفر أرجع رمز الحالة {response.status_code}")
+                return None  # أو أي قيمة افتراضية تناسب الكود الخاص بك
+        except requests.exceptions.JSONDecodeError:
+            print(f"خطأ: الخادم لم يُرجع JSON. محتوى الاستجابة: {response.text[:200]}")
+            return None
         #print(data)
         try:
             # Check if the 'extract' key exists in the response
@@ -811,17 +830,12 @@ class Article:
                 self.search_demonym_into_text(nats,arnats)
             print("---------------------------------")
 #TESTS
-categories1=[
-    'ناس تزادو ف سلا'
-]
 categories=[
     'ناس تزادو ف الدار البيضا',
     'ناس تزادو ف الرباط',
     'ناس تزادو ف سلا',
-    'ناس تزادو ف فاس'
-
-]
-categories2=[
+    'ناس تزادو ف فاس',
+    'ناس تزادو ف سلا',
     'كتاب مغاربة',
     'شاعير مغريبي',
     'كاتيبات مغريبيات',
@@ -830,9 +844,7 @@ categories2=[
     'وزير أول مغريبي',
     'وزيرة مغريبية',
     'سلطان مغريبي',
-    'زريعة شخصيات د لمغريب'
-]
-birthsof=[
+    'زريعة شخصيات د لمغريب',
     'زيادة 1930',
     'زيادة 1931',
     'زيادة 1932',
