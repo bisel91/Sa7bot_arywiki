@@ -1,0 +1,142 @@
+[
+  {
+    "query_name": "إبراهيم بارغاس",
+    "status": "success",
+    "data": {
+      "people": [
+        {
+          "name": "إبراهيم بارغاس",
+          "birth_date": null,
+          "birth_place": null,
+          "bio": null
+        }
+      ]
+    }
+  },
+  {
+    "query_name": "علي بنجلون",
+    "status": "success",
+    "data": {
+      "people": [
+        {
+          "name": "علي بنجلون",
+          "birth_date": null,
+          "birth_place": null,
+          "bio": null
+        }
+      ]
+    }
+  },
+  {
+    "query_name": "Youssef Ben abbès",
+    "status": "success",
+    "data": {
+      "people": [
+        {
+          "name": "Youssef Ben abbès",
+          "birth_date": null,
+          "birth_place": null,
+          "bio": null
+        }
+      ]
+    }
+  },
+  {
+    "query_name": "بنسالم جسوس",
+    "status": "success",
+    "data": {
+      "people": [
+        {
+          "name": "بنسالم جسوس",
+          "birth_date": null,
+          "birth_place": null,
+          "bio": null
+        }
+      ]
+    }
+  },
+  {
+    "query_name": "حجاج الغناسي",
+    "status": "success",
+    "data": {
+      "people": [
+        {
+          "name": " Hajaj Al-Ghunaisi",
+          "birth_date": null,
+          "birth_place": null,
+          "bio": null
+        }
+      ]
+    }
+  },
+  {
+    "query_name": "إبراهيم الفاسي الفهري",
+    "status": "success",
+    "data": {
+      "people": [
+        {
+          "name": "إبراهيم الفاسي الفهري",
+          "birth_date": null,
+          "birth_place": null,
+          "bio": null
+        }
+      ]
+    }
+  },
+  {
+    "query_name": "الشيخ زايد أوبجنا",
+    "status": "success",
+    "data": {
+      "people": [
+        {
+          "name": " Sheikh Zayed bin Sultan Al Nahyan",
+          "birth_date": "1918-06-18",
+          "birth_place": "Al Dhafra, Abu Dhabi, Ottoman Empire (now United Arab Emirates)",
+          "bio": "Sheikh Zayed bin Sultan Al Nahyan was the founder of the United Arab Emirates and its first president, serving from 1971 until his death in 2004. He was born in Al Dhafra, Abu Dhabi, and played a significant role in the unification of the seven emirates that form the UAE. Known for his philanthropy and development projects, he is remembered for his contributions to the welfare and prosperity of the UAE."
+        }
+      ]
+    }
+  },
+  {
+    "query_name": "محمد فال ولد عمير",
+    "status": "success",
+    "data": {
+      "people": [
+        {
+          "name": "محمد فال ولد عمير",
+          "birth_date": null,
+          "birth_place": null,
+          "bio": null
+        }
+      ]
+    }
+  },
+  {
+    "query_name": "محمد بن عبد الهادي زنيبر I",
+    "status": "success",
+    "data": {
+      "people": [
+        {
+          "name": "محمد بن عبد الهادي زنيبر I",
+          "birth_date": null,
+          "birth_place": null,
+          "bio": null
+        }
+      ]
+    }
+  },
+  {
+    "query_name": "عبد الحق فنيش",
+    "status": "success",
+    "data": {
+      "people": [
+        {
+          "name": "عبد الحق فنيش",
+          "birth_date": null,
+          "birth_place": null,
+          "bio": null
+        }
+      ]
+    }
+  }
+]

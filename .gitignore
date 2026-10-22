@@ -1,3 +1,6 @@
 /password.txt
 /user-config.py
 /creds.json
+.venv/
+.venv/
+scriptLLM.py
